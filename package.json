@@ -1,0 +1,22 @@
+{
+  "name": "phantompdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/phantompdf.js",
+  "bin": {
+    "phantompdf": "bin/phantompdf.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^0.5.1",
+    "lodash": "^3.0.1",
+    "minimist": "^1.1.0",
+    "phantom-render-stream": "^1.7.0",
+    "picture-tube": "0.0.4",
+    "tfunk": "^3.0.1"
+  }
+}
