@@ -59,3 +59,7 @@ var render = phantom({
   "margin": "15mm"
 }
 ```
+
+## Tests
+
+Forthcoming!
