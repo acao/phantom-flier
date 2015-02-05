@@ -1,7 +1,7 @@
 {
-  "name": "phantompdf",
+  "name": "phantomflier",
   "version": "1.0.1",
-  "description": "",
+  "description": "wkhtmltopdf-esque cli using phantom.js and node!",
   "main": "bin/phantomflier.js",
   "bin": {
     "phantomflier": "bin/phantomflier.js"
@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Richard Schulte",
   "license": "ISC",
   "dependencies": {
     "chalk": "^0.5.1",
