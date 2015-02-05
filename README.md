@@ -47,13 +47,15 @@ var render = phantom({
 
 ### Other Options
 
--v, --v, ---v for more verbose output
+-v, -vv, -vvv for more verbose output
 
 ## Default Options
 
-```{
+```js
+{
   "format": "Letter",
   "orientation": "landscape",
   "format" : "pdf",
   "margin": "15mm"
-}```
+}
+```
