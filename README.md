@@ -104,15 +104,23 @@ var render = phantom({
 
 -v, -vv, -vvv for more verbose output
 
-## Default Options
+## Example Config File
 
 ```js
-{
-  "format": "Letter",
-  "orientation": "landscape",
-  "format" : "pdf",
-  "margin": "15mm"
+var defaultConfig = {
+  "options": {
+    "format": "Letter",
+    "orientation": "landscape",
+    "format" : "pdf",
+    "margin": "15mm"
+  },
+  "paths": {
+    "source": ""
+    "dest": " "
+  }
 }
+
+module.exports = defaultConfig;
 ```
 
 ## Testing

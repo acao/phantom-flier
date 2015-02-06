@@ -1,4 +1,4 @@
-module.exports defaultConfig = {
+var defaultConfig = {
   "options": {
     "format": "Letter",
     "orientation": "landscape",
@@ -7,3 +7,4 @@ module.exports defaultConfig = {
   },
   "paths": {}
 }
+module.exports = defaultConfig;
