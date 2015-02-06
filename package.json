@@ -18,5 +18,8 @@
     "minimist": "^1.1.0",
     "phantom-render-stream": "^1.7.0",
     "picture-tube": "0.0.4"
+  },
+  "devDependencies": {
+    "gulp-tenon-client": "^0.1.1"
   }
 }

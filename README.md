@@ -1,17 +1,53 @@
 ## Phantom Flier
 **A wkhtmltopdf-esque cli using phantom.js and node.js!**
 
+## Background
+
+I migrated a client to an excellent new PAAS solution. Our application required the incredibly powerful wkhtmltopdf binary, which was not possible in their containerized application environment.
+
+Their reasoning was sound - why install this package that require Xorg dependencies (defeating the purpose of containerization) when there are so many other ways to achieve this goal?
+
 ## Installation
 
-``npm i -g phantomflier``
+```
+npm i -g phantomflier
+```
 
 ## Usage
 
-``phantomflier input/path/or/url output/path/with.ext --phantom-render-stream-options``
+There are two ways to use phantomflier - the CLI and/or a phantomflier.json file.
 
-### Example usage
+### Basic CLI Usage
 
-``phantomflier http://google.com ~/Pictures/google.pdf --format pdf --orientation landscape``
+```
+~$: phantomflier input/path/or/url output/path/with.ext --phantom-render-stream-options
+```
+#### Example
+
+```
+~$: phantomflier http://google.com ~/Pictures/google.pdf --format pdf --orientation landscape
+```
+
+### Blobs?!
+
+In theory, any stream source/dest param, arrays or blobs, that you would pass to, say, a gulp task are possible.
+
+For example:
+
+```
+~$: phantomflier ./build/**/*.html ./_gh_pages/archive/
+/ --format pdf --pool 3 --timeout 2000 --paper-format Letter
+```
+That would be fun to try!
+
+### Configfiles ftw
+
+(coming soon!)
+
+If there is a phantomflier.json file in your cwd, or you pass a --config param with a path to a config, you are golden for some json preconfiguration action!
+
+The CLI overrides the default config - whether provided by this module, or your config as provided above.
+
 
 ## Options
 
@@ -60,6 +96,15 @@ var render = phantom({
 }
 ```
 
-## Tests
+## Testing
 
 Forthcoming!
+
+
+## TODO
+
+- [ ] unit and acceptance tests using tape and ??, plus travis
+- [ ] actually implement the config file thing I talk about
+- [ ] array/blob logic and error handling
+- [ ] [picture-tube](http://github.com/substack/picture-tube) --preview flag for lols
+- [ ]
