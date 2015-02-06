@@ -7,4 +7,5 @@ var defaultConfig = {
   },
   "paths": {}
 }
+
 module.exports = defaultConfig;
