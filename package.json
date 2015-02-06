@@ -1,6 +1,6 @@
 {
   "name": "phantomflier",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "wkhtmltopdf-esque cli using phantom.js and node!",
   "main": "bin/phantomflier.js",
   "bin": {
