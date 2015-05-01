@@ -9,11 +9,12 @@ var
 , phantom      = require('phantom-render-stream')
 , config       = {};
 
-// Include defaults: required for config object!
-config.defaults = config.options;
+// // Include defaults: required for config object!
+// config.defaults = config.options;
 
 // Build the config object using defauts and process
 config = phantomFlier.options.buildConfig(config, process);
+console.log(config);
 
 // Initialize Phantom.js
 var render = phantom();
@@ -21,9 +22,15 @@ var render = phantom();
 // Render with phantom, output to config'd path
 render(config.paths.source, config.options)
   .pipe(
-    fs.createWriteStream(config.paths.dest).on('end', function(){
-      utils.logger.info('you did it!');
-    }))
+    fs.createWriteStream(config.paths.dest)
+    //   .on('end', function(){
+    //     utils.logger.info('you did it!');
+    //   })
+    //   .on('error', function(e){
+    //     logger.error('there was an error with the phantom.js write stream:', e);
+    //     process.exit(1);
+    // })
+  )
   .on('error', function(e){
     logger.error('there was an error with the phantom.js write stream:');
     console.log(e);

@@ -1,6 +1,8 @@
 {
-  "format": "Letter",
-  "orientation": "landscape",
+  "paperFormat": "Legal",
+  "orientation": "portrait",
   "format" : "pdf",
-  "margin": "15mm"
+  "margin": "10mm",
+  "width" : "1600",        // Changes the width size. Defaults to 1280
+  "height" : "1000",
 }

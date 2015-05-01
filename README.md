@@ -7,20 +7,6 @@ I migrated a client to an excellent new PAAS solution. Our application required 
 
 Their reasoning was sound - why install this package that require Xorg dependencies (defeating the purpose of containerization) when there are so many other ways to achieve this goal?
 
-## Named in honor of a Badass Naval Aviator
-
-This module is named for my grandfather and namesake, [Capt. Richard Schulte Sr., USN,][abd9814b] who passed away shortly after I began writing this module.
-
-  [abd9814b]: http://www.cleveland.com/metro/index.ssf/2015/01/naval_aviator_richard_schulte.html "Plain Dealer News Obit"
-
-He was a cutting edge pilot and fleet captain who helped introduce the F4 Phantom to fighter and air to ground combat. His work with the F4 Phantom found him helping to create what would become known as the Top Gun academy.
-
-![Capt. Richard Schulte Sr., USN](http://imgick.cleveland.com/home/cleve-media/width620/img/plain_dealer_metro/photo/16868703-mmmain.jpg)
-
-He introduced tactics that helped preserve the lives of pilots who were in constant peril by focusing on fighter air-to-ground combat against SAM sites. Phantom F4s were the fighter jet that could handle those payloads.
-
-This module introduces a node.js package as a feature-full binary (which probably has already been done before) that may save system resources and solve server scalability woes. Not the same as saving lives but hey, whatever helps.
-
 ## Installation
 
 ```
@@ -134,3 +120,18 @@ Forthcoming!
 - [ ] actually implement the config file thing I talk about
 - [ ] array/blob logic and error handling
 - [ ] [picture-tube](http://github.com/substack/picture-tube) --preview flag for lols
+
+
+## Named in honor of a Badass Naval Aviator
+
+This module is named for my grandfather and namesake, [Capt. Richard Schulte Sr., USN,][abd9814b] who passed away shortly after I began writing this module.
+
+  [abd9814b]: http://www.cleveland.com/metro/index.ssf/2015/01/naval_aviator_richard_schulte.html "Plain Dealer News Obit"
+
+He was a cutting edge pilot and fleet captain who helped introduce the F4 Phantom to fighter and air to ground combat. His work with the F4 Phantom found him helping to create what would become known as the Top Gun academy.
+
+![Capt. Richard Schulte Sr., USN](http://imgick.cleveland.com/home/cleve-media/width620/img/plain_dealer_metro/photo/16868703-mmmain.jpg)
+
+He introduced tactics that helped preserve the lives of pilots who were in constant peril by focusing on fighter air-to-ground combat against SAM sites. Phantom F4s were the fighter jet that could handle those payloads.
+
+This module introduces a node.js package as a feature-full binary (which probably has already been done before) that may save system resources and solve server scalability woes. Not the same as saving lives but hey, whatever helps.
