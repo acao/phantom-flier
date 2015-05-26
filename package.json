@@ -1,6 +1,6 @@
 {
   "name": "phantomflier",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "wkhtmltopdf-esque cli using phantom.js and node!",
   "main": "bin/phantomflier.js",
   "keywords" : ["pdf", "phantomjs", "export", "screen capture", "wkhtmltopdf"],
